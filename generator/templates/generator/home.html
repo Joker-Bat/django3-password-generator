@@ -19,7 +19,12 @@
 
       <form action="{% url 'password' %}">
         <label for="length">Length</label>
-        <select name="length" id="length" class="form-select form-select-sm">
+        <select
+          name="length"
+          id="length"
+          class="form-select form-select-sm"
+          style="max-width: 300px; margin: auto"
+        >
           <option value="4">4</option>
           <option value="5">5</option>
           <option value="6">6</option>
@@ -53,7 +58,7 @@
         <input
           type="submit"
           value="Generate Password"
-          class="btn btn-primary"
+          class="btn btn-primary my-3"
         />
       </form>
 
